@@ -19,6 +19,14 @@ const connect = function () {
     log('Successfully connected');
     conn.write('Name: MSA')
   });
+  
+  // conn.on('connect', () => {
+  //   setTimeout(() => {
+  //     conn.write('Move: up')
+  //     conn.write('Move: up')
+  //     conn.write('Move: up')
+  //   }, 200)
+  // });
 
   return conn;
 };
