@@ -20,14 +20,11 @@ const connect = function () {
     conn.write('Name: MSA')
   });
   
-  // conn.on('connect', () => {
-  //   setTimeout(() => {
-  //     conn.write('Move: up')
-  //     conn.write('Move: up')
-  //     conn.write('Move: up')
-  //   }, 200)
-  // });
-
+ 
+  conn.on('connect', () => {
+      // setTimeout(() => { conn.write('Move: up'); }, 200);
+  });
+  
   return conn;
 };
 
